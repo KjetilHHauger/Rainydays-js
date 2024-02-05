@@ -1,0 +1,368 @@
+.footer {
+    background-color: #253031;
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 260px auto auto;
+    grid-template-rows: repeat(12, auto);
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer .fa-brands {
+    margin-right: 8px;
+    width: 12px;
+}
+
+#language, #currency {
+    background-color: #253031;
+    color: #FFF;
+    border: none;
+}
+
+select {
+    cursor: pointer;
+}
+
+.languageForm {
+    margin-top: 32px;
+    margin-left: 35px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.currencyForm {
+    margin-top: 32px;
+    margin-right: 35px;
+    margin-left: auto;
+    grid-row: 1 / 1;
+    grid-column: 2 / 3;
+}
+
+.footerHr {
+    margin-top: 16px;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: #ffffff50;
+    height: 3px;
+    border: none;
+    grid-column: 1 / 4;
+    grid-row: 2 / 2;
+}
+
+.warrantyText {
+    margin-top: 24px;
+    margin-left: 35px;
+    margin-bottom: 0;
+    width: 360px;
+    height: 46px;
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
+.signUp {
+    margin-top: 16px;
+    margin-left: 35px;
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+}
+
+.signUpBtn {
+    width: 80px;
+    height: 32px;
+    background-color: #253031;
+    border: 1px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.subscribeNewsletter {
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: 24px;
+    grid-column: 1 / 2;
+    grid-row: 5 / 5;
+}
+
+.subscribeForm {
+    margin-left: 35px;
+    margin-top: 8px;
+    grid-column: 1 / 3;
+    grid-row: 6 / 6;
+    margin-right: auto;
+    position: relative;
+}
+
+.subscribeButton {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    width: 100px;
+    height: 36px;
+    background-color: #909090;
+    color: white;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#footerEmail {
+    width: 360px;
+    height: 48px;
+    border: 1px solid white;
+    padding: 0 0 0 8px;
+    background-color: #253031;
+    color: #FFF;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.shoppingHelp {
+    margin-top: 16px;
+    margin-left: 35px;
+    width: 156px;
+    grid-column: 1 / 1;
+    grid-row: 7 / 8;
+    line-height: 1.5rem;
+}
+
+.repairAndCare {
+    margin-top: 16px;
+    width: 156px;
+    height: 122px;
+    grid-column: 2 / 2;
+    grid-row: 7 / 7;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+}
+
+.aboutRainydays {
+    margin-top: 24px;
+    width: 156px;
+    height: 226px;
+    margin-left: 35px;
+    grid-column: 1 / 1;
+    grid-row: 8 / 9;
+    line-height: 1.5rem;
+}
+
+.whereToBuy {
+    width: 156px;
+    height: 35px;
+    grid-column: 2 / 2;
+    grid-row: 8 / 8;
+    line-height: 1.5rem;
+}
+
+.follow {
+    width: 156px;
+    height: 148px;
+    margin-top: 100px;
+    grid-column: 2 / 2;
+    grid-row: 8 / 9;
+    line-height: 1.5rem;
+}
+
+.info {
+    width: 156px;
+    height: 35px;
+    margin-top: 24px;
+    grid-column: 2 / 2;
+    grid-row: 10 / 10;
+    line-height: 1.5rem;
+}
+
+.logoBottomLeft {
+    margin-left: 35px;
+    margin-bottom: 60px;
+    margin-top: 41px;
+    grid-column: 1 / 2;
+    grid-row: 11 / 11;
+    font-size: 10px;
+    width: 200px; 
+    height: 30px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 1024px) {
+
+    .footer {
+        grid-template-columns: 360px 80px auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .languageForm {
+        margin-top: 32px;
+        margin-left: 70px;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    
+    .currencyForm {
+        margin-top: 32px;
+        margin-right: 70px;
+        margin-left: auto;
+        grid-column: 5 / 5;
+        grid-row: 1 / 1;
+    }
+
+    .footerHr {
+        margin-left: 70px;
+        margin-right: 70px;
+        grid-column: 1 / 7;
+        grid-row: 2 / 2;
+    }
+    
+    .warrantyText {
+        margin-top: 16px;
+        margin-left: 70px;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+    
+    .signUp {
+        margin-left: 74px;
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+    
+    .subscribeNewsletter {
+        margin-left: 70px;
+        margin-top: -104px;
+        grid-column: 1 / 2;
+        grid-row: 4 / 4;
+    }
+
+    .subscribeForm {
+        margin-left: 70px;
+        margin-top: -72px;
+        grid-column: 1 / 3;
+        grid-row: 4 / 4;
+    }
+    
+    .shoppingHelp {
+        margin-left: 120px;
+        grid-column: 3 / 3;
+        grid-row: 3 / 3;
+    }
+
+    .whereToBuy {
+        margin-top: -32px;
+        margin-left: 120px;
+        grid-column: 3 / 3;
+        grid-row: 4 / 4;
+    }
+
+    .info {
+        margin-top: 64px;
+        margin-left: 120px;
+        grid-column: 3 / 3;
+        grid-row: 4 / 4;
+    }
+    
+    .aboutRainydays {
+        margin-top: 16px;
+        margin-left: 8px;
+        grid-column: 4 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .repairAndCare {
+        margin-left: 8px;
+        grid-column: 5 / 5;
+        grid-row: 3 / 3;
+    }
+    
+    .follow {
+        margin-top: -32px;
+        margin-left: 8px;
+        grid-column: 5 / 5;
+        grid-row: 4 / 4;
+    }
+    
+    .logoBottomLeft {
+        margin-top: 72px;
+        margin-left: 70px;
+        margin-bottom: 54px;
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+
+    #footer {
+        grid-template-columns: 360px 100px auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    
+    .currencyForm {
+        grid-column: 6 / 6;
+        grid-row: 1 / 1;
+    }
+
+    .footerHr {
+        grid-column: 1 / 7;
+        grid-row: 2 / 2;
+    }
+
+    .shoppingHelp {
+        grid-column: 3 / 3;
+        grid-row: 3 / 3;
+    }
+
+    .aboutRainydays {
+        grid-column: 4 / 4;
+        grid-row: 3 / 5;
+    }
+
+    .repairAndCare {
+        margin-left: 8px;
+        grid-column: 5 / 5;
+        grid-row: 3 / 4;
+    }
+
+    .info {
+        margin-top: 0;
+        margin-left: 8px;
+        grid-column: 5 / 5;
+        grid-row: 4 / 4;
+    }
+
+    .whereToBuy {
+        margin-top: 16px;
+        margin-left: 8px;
+        margin-right: 70px;
+        grid-column: 6 / 6;
+        grid-row: 3 / 3;
+    }
+
+    .follow {
+        margin-top: -72px;
+        margin-left: 8px;
+        grid-column: 6 / 6;
+        grid-row: 4 / 4;
+    }
+    
+    .logoBottomLeft {
+        margin-top: 41px;
+        margin-left: 70px;
+        margin-bottom: 66px;
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+}
