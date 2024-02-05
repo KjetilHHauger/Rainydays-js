@@ -1,0 +1,19 @@
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12rem;
+    row-gap: 4rem;
+    margin: 6rem 70px 0 70px;
+}
+
+.card {
+   
+}
+
+.card img{
+    max-height: 50vh;
+}
+
+.footer {
+    margin-top: 4rem;
+}
