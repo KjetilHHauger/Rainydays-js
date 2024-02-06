@@ -1,17 +1,45 @@
 #content {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 12rem;
+    justify-content: center;
+    column-gap: 5rem;
     row-gap: 4rem;
-    margin: 6rem 70px 0 70px;
+    margin: 3rem 70px 0 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#filter {
+    
 }
 
 .card {
-   
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: 0.3s;
 }
 
-.card img{
-    max-height: 50vh;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.price, .discounted  {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0;
+}
+
+.discounted {
+    color: red;
+    font-size: 1.1rem;
 }
 
 .footer {
