@@ -1,30 +1,34 @@
 const content = document.getElementById("content");
+const men = document.getElementById("filterMen");
+const apiUrl = 'https://api.noroff.dev/api/v1/rainy-days';
+
 
 let apiData = [];
 
-fetch("https://api.noroff.dev/api/v1/rainy-days")
+fetch(apiUrl)
 .then((response) => response.json())
 .catch(() => renderError())
 .then((dataResult) => {
     apiData = dataResult;
-    for (const data of apiData) {
-        displayData(data)
-    }
+    for (let i = 0; 0 < apiData.length; i++) {
+        let data = apiData[i];
+            if (data.onSale === true) {
+                content.innerHTML += `
+                    <div class="card">
+                        <img src="${data.image}" alt="Image of ${data.title}">
+                        <h2 class="title">${data.title}</h2>
+                        <p class="price">${data.price}<strong class="discounted">${data.discountedPrice}</strong></p>
+        `
+            } else {
+                content.innerHTML += `
+                    <div class="card">
+                        <img src="${data.image}" alt="Image of ${data.title}">
+                        <h2 class="title">${data.title}</h2>
+                        <p class="price">${data.price}</p>
+        `
+            }
+        }
 });
-
-
-function displayData(data) {
-    content.innerHTML += `
-        <div class="card">
-            <img src="${data.image}" alt="Image of ${data.title}">
-            <h2 class="title">${data.title}</h2>
-            <p class="price">${data.price}</p>
-            <h3 class="discounted">${data.discountedPrice}</h3>
-            <p class="sizes">${data.sizes}</p>
-            <button class="addToCart">Add to cart</Button>
-        </div>
-    `
-}
 
 function renderError() {
     const error = document.getElementById("content")
